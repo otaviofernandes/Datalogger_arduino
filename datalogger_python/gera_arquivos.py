@@ -18,7 +18,7 @@ def monta_nome(i):
             nome += '0' + data[i] + '.'
         else:
             nome += data[i] + '.'
-
+            
     if len(data[-1]) < 2:
         nome += '0' + data[-1] + '-'
     else:
@@ -61,6 +61,8 @@ def gera_arquivos(doc):
         elif leitura[i] == 'end\n' and estado == 1:
             arquivo.close()
             estado = 0
+    return
+
 
 def arquivo():
     fim = False
